@@ -27,7 +27,7 @@ final class SettingsViewController: UIViewController {
         tableView.delegate = self
         return tableView
     }()
-
+    
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -62,5 +62,3 @@ final class SettingsViewController: UIViewController {
         }
     }
 }
-
-
