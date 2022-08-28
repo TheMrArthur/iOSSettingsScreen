@@ -18,6 +18,9 @@ class SettingsViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 70, bottom: 0, right: 0)
         tableView.register(DefaultTableViewCell.self, forCellReuseIdentifier: "defaultCell")
+        tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: "switchCell")
+        tableView.register(LabelTableViewCell.self, forCellReuseIdentifier: "labelCell")
+        tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: "imageCell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
