@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController {
 
     var setupSections: [SetupSections]?
 
@@ -16,6 +16,8 @@ class SettingsViewController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
+        tableView.backgroundColor = .black
+        tableView.separatorColor = .darkGray
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 70, bottom: 0, right: 0)
         tableView.register(DefaultTableViewCell.self, forCellReuseIdentifier: "defaultCell")
         tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: "switchCell")
@@ -33,6 +35,9 @@ class SettingsViewController: UIViewController {
         viewWillAppear(true)
         setupSections = SetupSections.setupSections
         title = "Настройки"
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.barTintColor = .black
         setupHierarchy()
         setupLayout()
     }
@@ -57,4 +62,5 @@ class SettingsViewController: UIViewController {
         }
     }
 }
+
 
