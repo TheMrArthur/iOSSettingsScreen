@@ -37,6 +37,7 @@ class DefaultTableViewCell: UITableViewCell {
     lazy var leftLabel: UILabel = {
         let leftLabel = UILabel()
         leftLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        leftLabel.textColor = .white
         return leftLabel
     }()
 
@@ -50,6 +51,7 @@ class DefaultTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.backgroundColor = .tertiarySystemFill
         self.selectedBackgroundView = selectedColorView
         self.tintColor = .white
         setupHierarchy()
