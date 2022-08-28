@@ -21,10 +21,37 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "defaultCell", for: indexPath) as? DefaultTableViewCell
         cell?.cellSetups = setupSections?[indexPath.section].setupItem[indexPath.row]
         cell?.accessoryType = .disclosureIndicator
-        return cell ?? UITableViewCell()
+
+        let switchTableCell = tableView.dequeueReusableCell(withIdentifier: "switchCell", for: indexPath) as? SwitchTableViewCell
+        switchTableCell?.cellSetups = setupSections?[indexPath.section].setupItem[indexPath.row]
+        switchTableCell?.selectionStyle = .none
+
+        let labelTableCell = tableView.dequeueReusableCell(withIdentifier: "labelCell", for: indexPath) as? LabelTableViewCell
+        labelTableCell?.cellSetups = setupSections?[indexPath.section].setupItem[indexPath.row]
+        labelTableCell?.accessoryType = .disclosureIndicator
+
+        let imageTableCell = tableView.dequeueReusableCell(withIdentifier: "imageCell", for: indexPath) as? ImageTableViewCell
+        imageTableCell?.cellSetups = setupSections?[indexPath.section].setupItem[indexPath.row]
+        imageTableCell?.accessoryType = .disclosureIndicator
+
+        switch setupSections?[indexPath.section].setupItem[indexPath.row].cellType {
+            case .defaultCell:
+                return cell ?? UITableViewCell()
+            case .switchCell:
+                return switchTableCell ?? UITableViewCell()
+            case .labelCell:
+                return labelTableCell ?? UITableViewCell()
+            case .imageCell:
+                return imageTableCell ?? UITableViewCell()
+            default:
+                return UITableViewCell()
+        }
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+
+        if setupSections?[indexPath.section].setupItem[indexPath.row].cellType != .switchCell {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
 }

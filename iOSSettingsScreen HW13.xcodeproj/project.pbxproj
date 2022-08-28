@@ -16,6 +16,9 @@
 		ECA2A4AE28BBE19800600BF0 /* SettingsViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4AD28BBE19800600BF0 /* SettingsViewController+Extension.swift */; };
 		ECA2A4B028BBE1FB00600BF0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4AF28BBE1FB00600BF0 /* Model.swift */; };
 		ECA2A4B228BBE3B300600BF0 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B128BBE3B300600BF0 /* DefaultTableViewCell.swift */; };
+		ECA2A4B428BBE66400600BF0 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B328BBE66400600BF0 /* SwitchTableViewCell.swift */; };
+		ECA2A4B628BBE68800600BF0 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B528BBE68800600BF0 /* LabelTableViewCell.swift */; };
+		ECA2A4B828BBE6AA00600BF0 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B728BBE6AA00600BF0 /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		ECA2A4AD28BBE19800600BF0 /* SettingsViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+Extension.swift"; sourceTree = "<group>"; };
 		ECA2A4AF28BBE1FB00600BF0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ECA2A4B128BBE3B300600BF0 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		ECA2A4B328BBE66400600BF0 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		ECA2A4B528BBE68800600BF0 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		ECA2A4B728BBE6AA00600BF0 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				ECA2A4B128BBE3B300600BF0 /* DefaultTableViewCell.swift */,
+				ECA2A4B328BBE66400600BF0 /* SwitchTableViewCell.swift */,
+				ECA2A4B528BBE68800600BF0 /* LabelTableViewCell.swift */,
+				ECA2A4B728BBE6AA00600BF0 /* ImageTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -225,9 +234,12 @@
 			files = (
 				ECA2A4B028BBE1FB00600BF0 /* Model.swift in Sources */,
 				ECA2A4B228BBE3B300600BF0 /* DefaultTableViewCell.swift in Sources */,
+				ECA2A4B428BBE66400600BF0 /* SwitchTableViewCell.swift in Sources */,
+				ECA2A4B828BBE6AA00600BF0 /* ImageTableViewCell.swift in Sources */,
 				ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */,
 				ECA2A4AE28BBE19800600BF0 /* SettingsViewController+Extension.swift in Sources */,
 				ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */,
+				ECA2A4B628BBE68800600BF0 /* LabelTableViewCell.swift in Sources */,
 				ECA2A49028BBD9B200600BF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
