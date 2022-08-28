@@ -13,6 +13,9 @@
 		ECA2A49728BBD9B400600BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA2A49628BBD9B400600BF0 /* Assets.xcassets */; };
 		ECA2A49A28BBD9B400600BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA2A49828BBD9B400600BF0 /* LaunchScreen.storyboard */; };
 		ECA2A4AC28BBDDC200600BF0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA2A4AB28BBDDC200600BF0 /* SnapKit */; };
+		ECA2A4AE28BBE19800600BF0 /* SettingsViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4AD28BBE19800600BF0 /* SettingsViewController+Extension.swift */; };
+		ECA2A4B028BBE1FB00600BF0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4AF28BBE1FB00600BF0 /* Model.swift */; };
+		ECA2A4B228BBE3B300600BF0 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B128BBE3B300600BF0 /* DefaultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		ECA2A49628BBD9B400600BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA2A49928BBD9B400600BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECA2A49B28BBD9B400600BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA2A4AD28BBE19800600BF0 /* SettingsViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+Extension.swift"; sourceTree = "<group>"; };
+		ECA2A4AF28BBE1FB00600BF0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ECA2A4B128BBE3B300600BF0 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		ECA2A4A628BBDD7800600BF0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				ECA2A4B128BBE3B300600BF0 /* DefaultTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 		ECA2A4A728BBDD7E00600BF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECA2A4AF28BBE1FB00600BF0 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				ECA2A49128BBD9B200600BF0 /* SettingsViewController.swift */,
+				ECA2A4AD28BBE19800600BF0 /* SettingsViewController+Extension.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -214,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA2A4B028BBE1FB00600BF0 /* Model.swift in Sources */,
+				ECA2A4B228BBE3B300600BF0 /* DefaultTableViewCell.swift in Sources */,
 				ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */,
+				ECA2A4AE28BBE19800600BF0 /* SettingsViewController+Extension.swift in Sources */,
 				ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */,
 				ECA2A49028BBD9B200600BF0 /* SceneDelegate.swift in Sources */,
 			);
