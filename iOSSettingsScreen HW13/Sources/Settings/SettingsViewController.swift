@@ -41,6 +41,10 @@ class SettingsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+
     // MARK: - Setup View
 
     private func setupHierarchy() {

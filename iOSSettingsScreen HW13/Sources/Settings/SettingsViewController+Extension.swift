@@ -51,7 +51,11 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         if setupSections?[indexPath.section].setupItem[indexPath.row].cellType != .switchCell {
+            let detailSettingsViewController = DetailSettingsViewController()
             tableView.deselectRow(at: indexPath, animated: true)
+            detailSettingsViewController.viewSetups = setupSections?[indexPath.section].setupItem[indexPath.row]
+            navigationController?.pushViewController(detailSettingsViewController, animated: true)
+            print("\(detailSettingsViewController.viewSetups?.nameCell ?? "")")
         }
     }
 }
