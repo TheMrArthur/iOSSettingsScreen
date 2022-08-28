@@ -19,6 +19,7 @@
 		ECA2A4B428BBE66400600BF0 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B328BBE66400600BF0 /* SwitchTableViewCell.swift */; };
 		ECA2A4B628BBE68800600BF0 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B528BBE68800600BF0 /* LabelTableViewCell.swift */; };
 		ECA2A4B828BBE6AA00600BF0 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B728BBE6AA00600BF0 /* ImageTableViewCell.swift */; };
+		ECA2A4BA28BBE88900600BF0 /* DetailSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A4B928BBE88900600BF0 /* DetailSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ECA2A4B328BBE66400600BF0 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		ECA2A4B528BBE68800600BF0 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
 		ECA2A4B728BBE6AA00600BF0 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		ECA2A4B928BBE88900600BF0 /* DetailSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		ECA2A4A928BBDD8F00600BF0 /* DetailSettings */ = {
 			isa = PBXGroup;
 			children = (
+				ECA2A4B928BBE88900600BF0 /* DetailSettingsViewController.swift */,
 			);
 			path = DetailSettings;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				ECA2A4B228BBE3B300600BF0 /* DefaultTableViewCell.swift in Sources */,
 				ECA2A4B428BBE66400600BF0 /* SwitchTableViewCell.swift in Sources */,
 				ECA2A4B828BBE6AA00600BF0 /* ImageTableViewCell.swift in Sources */,
+				ECA2A4BA28BBE88900600BF0 /* DetailSettingsViewController.swift in Sources */,
 				ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */,
 				ECA2A4AE28BBE19800600BF0 /* SettingsViewController+Extension.swift in Sources */,
 				ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */,
