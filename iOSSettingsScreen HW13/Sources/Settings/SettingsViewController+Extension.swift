@@ -47,7 +47,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
                 return UITableViewCell()
         }
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         if setupSections?[indexPath.section].setupItem[indexPath.row].cellType != .switchCell {
