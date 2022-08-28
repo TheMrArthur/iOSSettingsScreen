@@ -9,18 +9,17 @@
 /* Begin PBXBuildFile section */
 		ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A48D28BBD9B200600BF0 /* AppDelegate.swift */; };
 		ECA2A49028BBD9B200600BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A48F28BBD9B200600BF0 /* SceneDelegate.swift */; };
-		ECA2A49228BBD9B200600BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A49128BBD9B200600BF0 /* ViewController.swift */; };
-		ECA2A49528BBD9B200600BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA2A49328BBD9B200600BF0 /* Main.storyboard */; };
+		ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A49128BBD9B200600BF0 /* SettingsViewController.swift */; };
 		ECA2A49728BBD9B400600BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA2A49628BBD9B400600BF0 /* Assets.xcassets */; };
 		ECA2A49A28BBD9B400600BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA2A49828BBD9B400600BF0 /* LaunchScreen.storyboard */; };
+		ECA2A4AC28BBDDC200600BF0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA2A4AB28BBDDC200600BF0 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECA2A48A28BBD9B200600BF0 /* iOSSettingsScreen HW13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSSettingsScreen HW13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA2A48D28BBD9B200600BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA2A48F28BBD9B200600BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECA2A49128BBD9B200600BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECA2A49428BBD9B200600BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECA2A49128BBD9B200600BF0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		ECA2A49628BBD9B400600BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA2A49928BBD9B400600BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECA2A49B28BBD9B400600BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA2A4AC28BBDDC200600BF0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +56,86 @@
 		ECA2A48C28BBD9B200600BF0 /* iOSSettingsScreen HW13 */ = {
 			isa = PBXGroup;
 			children = (
-				ECA2A48D28BBD9B200600BF0 /* AppDelegate.swift */,
-				ECA2A48F28BBD9B200600BF0 /* SceneDelegate.swift */,
-				ECA2A49128BBD9B200600BF0 /* ViewController.swift */,
-				ECA2A49328BBD9B200600BF0 /* Main.storyboard */,
-				ECA2A49628BBD9B400600BF0 /* Assets.xcassets */,
-				ECA2A49828BBD9B400600BF0 /* LaunchScreen.storyboard */,
-				ECA2A49B28BBD9B400600BF0 /* Info.plist */,
+				ECA2A4A228BBDD0900600BF0 /* Resources */,
+				ECA2A4A128BBDD0100600BF0 /* Sources */,
 			);
 			path = "iOSSettingsScreen HW13";
+			sourceTree = "<group>";
+		};
+		ECA2A4A128BBDD0100600BF0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2A4A928BBDD8F00600BF0 /* DetailSettings */,
+				ECA2A4A828BBDD8600600BF0 /* Settings */,
+				ECA2A4A728BBDD7E00600BF0 /* Model */,
+				ECA2A4A628BBDD7800600BF0 /* Cell */,
+				ECA2A4A528BBDD5700600BF0 /* Storyboards */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		ECA2A4A228BBDD0900600BF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2A49628BBD9B400600BF0 /* Assets.xcassets */,
+				ECA2A4A428BBDD2600600BF0 /* App */,
+				ECA2A4A328BBDD1700600BF0 /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECA2A4A328BBDD1700600BF0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2A49B28BBD9B400600BF0 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		ECA2A4A428BBDD2600600BF0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2A48D28BBD9B200600BF0 /* AppDelegate.swift */,
+				ECA2A48F28BBD9B200600BF0 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ECA2A4A528BBDD5700600BF0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2A49828BBD9B400600BF0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ECA2A4A628BBDD7800600BF0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ECA2A4A728BBDD7E00600BF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECA2A4A828BBDD8600600BF0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				ECA2A49128BBD9B200600BF0 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		ECA2A4A928BBDD8F00600BF0 /* DetailSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,9 @@
 			dependencies = (
 			);
 			name = "iOSSettingsScreen HW13";
+			packageProductDependencies = (
+				ECA2A4AB28BBDDC200600BF0 /* SnapKit */,
+			);
 			productName = "iOSSettingsScreen HW13";
 			productReference = ECA2A48A28BBD9B200600BF0 /* iOSSettingsScreen HW13.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = ECA2A48128BBD9B200600BF0;
+			packageReferences = (
+				ECA2A4AA28BBDDC200600BF0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ECA2A48B28BBD9B200600BF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +204,6 @@
 			files = (
 				ECA2A49A28BBD9B400600BF0 /* LaunchScreen.storyboard in Resources */,
 				ECA2A49728BBD9B400600BF0 /* Assets.xcassets in Resources */,
-				ECA2A49528BBD9B200600BF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA2A49228BBD9B200600BF0 /* ViewController.swift in Sources */,
+				ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */,
 				ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */,
 				ECA2A49028BBD9B200600BF0 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECA2A49328BBD9B200600BF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECA2A49428BBD9B200600BF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECA2A49828BBD9B400600BF0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,10 +357,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X3V3KXTWJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOSSettingsScreen HW13/Info.plist";
+				INFOPLIST_FILE = "iOSSettingsScreen HW13/Resources/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,10 +385,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X3V3KXTWJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOSSettingsScreen HW13/Info.plist";
+				INFOPLIST_FILE = "iOSSettingsScreen HW13/Resources/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECA2A4AA28BBDDC200600BF0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit?ysclid=l6xwdkny7g528794473";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECA2A4AB28BBDDC200600BF0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA2A4AA28BBDDC200600BF0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECA2A48228BBD9B200600BF0 /* Project object */;
 }
