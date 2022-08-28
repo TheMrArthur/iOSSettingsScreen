@@ -6,11 +6,48 @@
 //
 
 import UIKit
+import SnapKit
 
 class SettingsViewController: UIViewController {
 
+    var setupSections: [SetupSections]?
+
+    // MARK: - Elements
+
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .insetGrouped)
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 70, bottom: 0, right: 0)
+        tableView.register(DefaultTableViewCell.self, forCellReuseIdentifier: "defaultCell")
+        tableView.dataSource = self
+        tableView.delegate = self
+        return tableView
+    }()
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewWillAppear(true)
+        setupSections = SetupSections.setupSections
+        title = "Настройки"
+        setupHierarchy()
+        setupLayout()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    // MARK: - Setup View
+
+    private func setupHierarchy() {
+        view.addSubview(tableView)
+    }
+
+    private func setupLayout() {
+        tableView.snp.makeConstraints {
+            $0.top.trailing.bottom.leading.equalTo(view)
+        }
     }
 }
 
