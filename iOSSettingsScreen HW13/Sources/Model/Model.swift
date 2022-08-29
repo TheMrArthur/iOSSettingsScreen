@@ -12,15 +12,19 @@ enum CellType {
     case switchCell
     case labelCell
     case imageCell
+    case personalInfoCell
+    case findingCell
 }
 
 struct CellSetups {
     var icon: UIImage?
-    var iconBackgroundColor: UIColor
+    var iconBackgroundColor: UIColor?
     var nameCell: String?
     var rightLabel: String?
     var rightImage: UIImage?
     var cellType: CellType
+    var personalImage: UIImage?
+    var personalName: String?
 }
 
 struct SetupSections {
@@ -29,6 +33,16 @@ struct SetupSections {
 
 extension SetupSections {
     static var setupSections: [SetupSections] = [
+        SetupSections(setupItem: [
+            CellSetups(cellType: .findingCell)
+        ]),
+
+        SetupSections(setupItem: [
+            CellSetups(cellType: .personalInfoCell,
+                       personalImage: UIImage(named: "personalImage"),
+                       personalName: "Johny Silverhand")
+        ]),
+
         SetupSections(setupItem: [
             CellSetups(icon: UIImage(systemName: "airplane")!,
                        iconBackgroundColor: .systemOrange,

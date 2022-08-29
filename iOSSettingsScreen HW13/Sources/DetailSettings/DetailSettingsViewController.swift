@@ -9,13 +9,17 @@ import UIKit
 import SnapKit
 
 final class DetailSettingsViewController: UIViewController {
-    
+
     var viewSetups: CellSetups?
-    
+
     private func fillSettings() {
-        title = viewSetups?.nameCell
+        if viewSetups?.personalName != nil {
+            title = viewSetups?.personalName
+        } else {
+            title = viewSetups?.nameCell
+        }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black

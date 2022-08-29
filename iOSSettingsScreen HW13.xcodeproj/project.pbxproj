@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC56717828BD48BD007F8FB3 /* PersonalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56717728BD48BD007F8FB3 /* PersonalTableViewCell.swift */; };
+		EC56717A28BD48F2007F8FB3 /* FindingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56717928BD48F2007F8FB3 /* FindingTableViewCell.swift */; };
 		ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A48D28BBD9B200600BF0 /* AppDelegate.swift */; };
 		ECA2A49028BBD9B200600BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A48F28BBD9B200600BF0 /* SceneDelegate.swift */; };
 		ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA2A49128BBD9B200600BF0 /* SettingsViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC56717728BD48BD007F8FB3 /* PersonalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableViewCell.swift; sourceTree = "<group>"; };
+		EC56717928BD48F2007F8FB3 /* FindingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingTableViewCell.swift; sourceTree = "<group>"; };
 		ECA2A48A28BBD9B200600BF0 /* iOSSettingsScreen HW13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSSettingsScreen HW13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA2A48D28BBD9B200600BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA2A48F28BBD9B200600BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				ECA2A4B328BBE66400600BF0 /* SwitchTableViewCell.swift */,
 				ECA2A4B528BBE68800600BF0 /* LabelTableViewCell.swift */,
 				ECA2A4B728BBE6AA00600BF0 /* ImageTableViewCell.swift */,
+				EC56717728BD48BD007F8FB3 /* PersonalTableViewCell.swift */,
+				EC56717928BD48F2007F8FB3 /* FindingTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -241,10 +247,12 @@
 				ECA2A4B828BBE6AA00600BF0 /* ImageTableViewCell.swift in Sources */,
 				ECA2A4BA28BBE88900600BF0 /* DetailSettingsViewController.swift in Sources */,
 				ECA2A49228BBD9B200600BF0 /* SettingsViewController.swift in Sources */,
+				EC56717828BD48BD007F8FB3 /* PersonalTableViewCell.swift in Sources */,
 				ECA2A4AE28BBE19800600BF0 /* SettingsViewController+Extension.swift in Sources */,
 				ECA2A48E28BBD9B200600BF0 /* AppDelegate.swift in Sources */,
 				ECA2A4B628BBE68800600BF0 /* LabelTableViewCell.swift in Sources */,
 				ECA2A49028BBD9B200600BF0 /* SceneDelegate.swift in Sources */,
+				EC56717A28BD48F2007F8FB3 /* FindingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
