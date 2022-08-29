@@ -23,6 +23,8 @@ final class SettingsViewController: UIViewController {
         tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: "switchCell")
         tableView.register(LabelTableViewCell.self, forCellReuseIdentifier: "labelCell")
         tableView.register(ImageTableViewCell.self, forCellReuseIdentifier: "imageCell")
+        tableView.register(PersonalTableViewCell.self, forCellReuseIdentifier: "personalCell")
+        tableView.register(FindingTableViewCell.self, forCellReuseIdentifier: "findingCell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
