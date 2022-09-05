@@ -86,6 +86,5 @@ class DefaultTableViewCell: UITableViewCell {
             $0.centerY.equalTo(iconView)
             $0.leading.equalTo(iconView.snp.trailing).offset(10)
         }
-        
     }
 }
