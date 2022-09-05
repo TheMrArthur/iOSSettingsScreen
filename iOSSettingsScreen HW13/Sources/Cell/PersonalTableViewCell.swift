@@ -17,7 +17,7 @@ class PersonalTableViewCell: DefaultTableViewCell {
         }
     }
 
-    // MARK: - Elements
+    // MARK: - UI Elements
 
     private lazy var personalImage: UIImageView = {
         let personalImage = UIImageView()

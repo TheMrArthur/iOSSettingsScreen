@@ -84,14 +84,13 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        guard setupSections?[indexPath.section].setupItem[indexPath.row].cellType != .personalInfoCell else {
-            return 100
+        switch setupSections?[indexPath.section].setupItem[indexPath.row].cellType {
+            case .personalInfoCell:
+                return 100
+            case .findingCell:
+                return 35
+            default:
+                return UITableView.automaticDimension
         }
-
-        guard setupSections?[indexPath.section].setupItem[indexPath.row].cellType != .findingCell else {
-            return 35
-        }
-
-        return UITableView.automaticDimension
     }
 }

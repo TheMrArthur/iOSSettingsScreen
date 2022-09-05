@@ -18,7 +18,7 @@ class DefaultTableViewCell: UITableViewCell {
         }
     }
     
-    // MARK: - Elements
+    // MARK: - UI Elements
     
     lazy var iconView: UIImageView = {
         let iconView = UIImageView()
@@ -72,7 +72,7 @@ class DefaultTableViewCell: UITableViewCell {
     
     private func setupLayout() {
         iconView.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(30)
+            $0.leading.equalToSuperview().offset(17)
             $0.centerY.equalToSuperview()
             $0.width.height.equalTo(30)
         }

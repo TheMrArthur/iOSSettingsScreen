@@ -16,7 +16,7 @@ class LabelTableViewCell: DefaultTableViewCell {
         }
     }
     
-    // MARK: - Elements
+    // MARK: - UI Elements
     
     private lazy var labelCell: UILabel = {
         labelCell = UILabel()

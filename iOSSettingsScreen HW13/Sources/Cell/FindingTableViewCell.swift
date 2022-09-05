@@ -10,14 +10,21 @@ import SnapKit
 
 class FindingTableViewCell: DefaultTableViewCell {
 
-    // MARK: - Elements
+    // MARK: - UI Elements
 
     private lazy var findingTextField: UITextField = {
         let findingTextField = UITextField()
         findingTextField.textColor = .white
-        findingTextField.leftView = UIImageView(image: UIImage(systemName: "magnifyingglass"))
+
+        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        findingTextField.leftView = leftView
+        findingTextField.leftView?.tintColor = .lightGray
+        let leftIcon = UIImageView(image: UIImage(systemName: "magnifyingglass"))
+        leftIcon.frame = CGRect(x: 0, y: 3.5, width: 20, height: 20)
+        leftView.addSubview(leftIcon)
+
         findingTextField.leftViewMode = .always
-        findingTextField.attributedPlaceholder = NSAttributedString(string: "   Поиск", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        findingTextField.attributedPlaceholder = NSAttributedString(string: "Поиск", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         findingTextField.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         return findingTextField
     }()
