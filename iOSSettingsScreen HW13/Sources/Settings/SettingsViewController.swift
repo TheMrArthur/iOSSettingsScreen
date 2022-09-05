@@ -37,19 +37,12 @@ final class SettingsViewController: UIViewController {
         viewWillAppear(true)
         setupSections = SetupSections.setupSections
         title = "Настройки"
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationBar.barTintColor = .black
         setupHierarchy()
         setupLayout()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.navigationBar.prefersLargeTitles = false
     }
 
     // MARK: - Setup View
