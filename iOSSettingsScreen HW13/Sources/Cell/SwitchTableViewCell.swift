@@ -10,7 +10,7 @@ import SnapKit
 
 class SwitchTableViewCell: DefaultTableViewCell {
     
-    // MARK: - Elements
+    // MARK: - UI Elements
     
     private lazy var switchCell: UISwitch = {
         switchCell = UISwitch()

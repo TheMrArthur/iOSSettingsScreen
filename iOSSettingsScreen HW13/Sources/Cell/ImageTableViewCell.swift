@@ -16,7 +16,7 @@ class ImageTableViewCell: DefaultTableViewCell {
         }
     }
     
-    // MARK: - Elements
+    // MARK: - UI Elements
     
     private lazy var imageCell: UIImageView = {
         imageCell = UIImageView()
